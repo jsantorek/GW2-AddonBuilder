@@ -1,0 +1,59 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-gcc-13-x86_64-gnu17-release",
+            "displayName": "'conan-gcc-13-x86_64-gnu17-release' config",
+            "description": "'conan-gcc-13-x86_64-gnu17-release' configure using 'Unix Makefiles' generator",
+            "generator": "Unix Makefiles",
+            "cacheVariables": {
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
+                "CMAKE_BUILD_TYPE": "Release"
+            },
+            "environment": {
+                "PATH": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin:/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin:$penv{PATH}",
+                "MINGW_HOME": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p",
+                "CC": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-gcc",
+                "CXX": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-g++",
+                "CPP": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-cpp",
+                "AR": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-ar",
+                "AS": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-as",
+                "GDB": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-gdb",
+                "LD": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-ld",
+                "NM": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-nm",
+                "OBJCOPY": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-objcopy",
+                "OBJDUMP": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-objdump",
+                "RANLIB": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-ranlib",
+                "SIZE": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-size",
+                "STRINGS": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-strings",
+                "STRIP": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-strip",
+                "GCOV": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-gcov",
+                "RC": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-windres",
+                "DLLTOOL": "/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-dlltool"
+            },
+            "toolchainFile": "generators/conan_toolchain.cmake",
+            "binaryDir": "/home/deck/Documents/mingw-hello-world/imgui/test_package/build/gcc-13-x86_64-gnu17-release"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-gcc-13-x86_64-gnu17-release",
+            "configurePreset": "conan-gcc-13-x86_64-gnu17-release",
+            "jobs": 8
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-gcc-13-x86_64-gnu17-release",
+            "configurePreset": "conan-gcc-13-x86_64-gnu17-release"
+        }
+    ]
+}
