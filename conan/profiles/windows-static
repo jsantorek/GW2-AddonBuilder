@@ -1,0 +1,6 @@
+include(windows-common)
+
+[settings]
+build_type=Release
+compiler.runtime_type=Release
+compiler.runtime=static

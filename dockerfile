@@ -54,10 +54,12 @@ RUN set -eux; \
 COPY conan/ /conan-temp/
 RUN set -eux; \
     pipx install conan; \
-    /root/.local/bin/conan profile detect --force; \
-    mv /conan-temp/windows /root/.conan2/profiles/; \
-    /root/.local/bin/conan export /conan-temp/imgui --version=1.80; \
-    /root/.local/bin/conan export /conan-temp/generic --version=v1.2 --name=rcgg-arcdps-api; \
-    /root/.local/bin/conan export /conan-temp/generic --version=latest --name=rcgg-mumble-api; \
-    /root/.local/bin/conan export /conan-temp/generic --version=v6.1 --name=rcgg-nexus-api; \
+    update-alternatives --install /usr/bin/conan conan /root/.local/bin/conan 100; \
+    conan --version; \
+    conan profile detect --force; \
+    mv /conan-temp/profiles/* /root/.conan2/profiles/; \
+    conan export /conan-temp/recipes/imgui --version=1.80; \
+    conan export /conan-temp/recipes/generic --version=v1.2 --name=rcgg-arcdps-api; \
+    conan export /conan-temp/recipes/generic --version=latest --name=rcgg-mumble-api; \
+    conan export /conan-temp/recipes/generic --version=v6.1 --name=rcgg-nexus-api; \
     rm -rf /conan-temp;

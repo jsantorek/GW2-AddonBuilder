@@ -1,1 +1,0 @@
-  -L"/home/deck/Documents/mingw-hello-world/.conan/p/b/imgui3f2287f9c8924/p/lib"  "/home/deck/Documents/mingw-hello-world/.conan/p/b/imgui3f2287f9c8924/p/lib/libimgui.a" -limm32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

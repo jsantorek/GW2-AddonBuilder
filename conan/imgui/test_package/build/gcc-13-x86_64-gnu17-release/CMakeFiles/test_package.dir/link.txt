@@ -1,3 +1,0 @@
-/usr/bin/cmake -E rm -f CMakeFiles/test_package.dir/objects.a
-/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-ar qc CMakeFiles/test_package.dir/objects.a @CMakeFiles/test_package.dir/objects1.rsp
-/home/deck/Documents/mingw-hello-world/.conan/p/mingwee42928a8f73f/p/bin/x86_64-w64-mingw32-g++ -m64 -O3 -DNDEBUG -m64 -Wl,--whole-archive CMakeFiles/test_package.dir/objects.a -Wl,--no-whole-archive -o test_package.exe -Wl,--out-implib,libtest_package.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/test_package.dir/linkLibs.rsp
