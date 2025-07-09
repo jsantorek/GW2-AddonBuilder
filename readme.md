@@ -37,8 +37,6 @@ docker run -it -v <addon-source-path>:/addon ghcr.io/jsantorek/gw2-addon-builder
 ## ⚙️ If Using Conan + CMake Workflow (inside container)
 
 ```bash
-git config --global --add safe.directory /addon
-cd /addon
 conan install . --profile windows --build=missing
 cmake --preset=conan-release
 cmake --build --preset=conan-release

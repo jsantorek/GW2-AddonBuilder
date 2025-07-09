@@ -63,3 +63,7 @@ RUN set -eux; \
     conan export /conan-temp/recipes/generic --version=latest --name=rcgg-mumble-api; \
     conan export /conan-temp/recipes/generic --version=v6.1 --name=rcgg-nexus-api; \
     rm -rf /conan-temp;
+
+WORKDIR /addon
+RUN set -eux; \
+    git config --global --add safe.directory /addon;
