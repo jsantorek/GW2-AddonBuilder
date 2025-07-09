@@ -19,6 +19,7 @@ RUN set -eux; \
     pipx \
     cmake \
     make \
+    git \
     # Unpack xwin
     tar; \
     # ensure that clang/clang++ are callable directly
